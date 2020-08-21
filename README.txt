@@ -1,13 +1,9 @@
-Olá!
+This is a simple restful SPA webapp, that consists of two interfaces: one that receives a numeric input and store it in a database, and other that receives a number list (corresponding to the id's in the numbers database) and presents the sum of the numbers stored in the respective id's.
 
-É com muito prazer que vos apresento a resposta do desafio.
+This was developed for practicing/demo purposes, using the following technologies: HTML, CSS, Javascript, React, Axios, Asp.NET Core(C#), MySql.
 
-A aplicação foi desenolvida com ASP.NET Core e React. O RDMB é MySQL. 
-Segue, na pasta Model, o script da database.
+The UI captures the number (or the number list), then send the input in JSON format via a POST request to the .NET web api's, which stores the number in the database or return the sum of the values correspondant to the id list.
 
-A pasta clientApp não contém a node_modules (necessária para o React, mas muito pesada para ser enviada - baixar através do npm).
+The app was structured following the MVC architechture. In Model folder, you can find the database script. The form fields are validated using regEx.
 
-A estrutura da aplicação foi livremente inspirada na arquitetura MVC (apresenta simplificações dado o tamanho do app).
-
-O projeto foi gerenciado usando Visual Studio 2019, inclusive os servidores correram pela própria IDE (Creio que seja a forma mais simples de correr o app - abra o projeto no visual studio e ponha os servidores a correr).
-
+Everything was developed and tested with Visual Studio (running the servers from within the IDE), in localhost; so if you want to run this in your PC, you should check the code for port numbers and the database authentication data.
